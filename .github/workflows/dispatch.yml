@@ -18,9 +18,10 @@ jobs:
       - name: Self-hosted Renovate
         uses: renovatebot/github-action@v39.2.4
         env:
-          RENOVATE_REPOSITORIES: hiletmis/react-icons-api3
+          RENOVATE_REPOSITORIES: api3dao/logos
           RENOVATE_ONBOARDING: "false"
           RENOVATE_PLATFORM_COMMIT: "true"
+          RENOVATE_BASE_BRANCH: develop
         with:
           configurationFile: renovate.json
           token: ${{ secrets.RENOVATE_TOKEN }}
