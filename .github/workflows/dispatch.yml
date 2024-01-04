@@ -21,7 +21,7 @@ jobs:
           RENOVATE_REPOSITORIES: api3dao/logos
           RENOVATE_ONBOARDING: "false"
           RENOVATE_PLATFORM_COMMIT: "true"
-          RENOVATE_BASE_BRANCHES: prod
+          RENOVATE_BASE_BRANCHES: develop
         with:
           configurationFile: renovate.json
           token: ${{ secrets.GITHUB_TOKEN }}
